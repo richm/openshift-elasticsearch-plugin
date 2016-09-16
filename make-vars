@@ -1,0 +1,20 @@
+#!/bin/bash
+
+steal_version() {
+xmllint --shell bom/pom.xml <<EOT
+	setns bom=http://maven.apache.org/POM/4.0.0
+	xpath /bom:project/bom:version/text()
+EOT
+}
+
+git_rev() {
+	git log $1 -1 | awk '/^commit / { print $2 }'
+}
+
+VERSION=$(steal_version | grep 'content=')
+VERSION=${VERSION/*content=/}
+
+echo VERSION=$VERSION
+echo CODE_HASH=$(git_rev 2.3.5.1)
+echo MEAD_HASH=$(git_rev 2.3.5.1-build)
+echo INI_URL="git://git.app.eng.bos.redhat.com/openshift-elasticsearch-plugin.git?chain#$(git_rev 2.3.5.1-build)"
