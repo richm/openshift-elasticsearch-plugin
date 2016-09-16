@@ -10,7 +10,7 @@
   <description>
     A BOM used when building OpenShift ElasticSearch Plugin.
   </description>
-  <url>https://code.engineering.redhat.com/gerrit/openshift-elasticsearch-plugin</url>
+  <url>http://git.app.eng.bos.redhat.com/git/openshift-elasticsearch-plugin.git</url>
   <inceptionYear>2015</inceptionYear>
 
   <licenses>
@@ -23,7 +23,7 @@
   <scm>
     <connection>scm:git:ssh://code.engineering.redhat.com/openshift-elasticsearch-plugin</connection>
     <developerConnection>scm:git:ssh://code.engineering.redhat.com/openshift-elasticsearch-plugin</developerConnection>
-    <url>https://code.engineering.redhat.com/gerrit/openshift-elasticsearch-plugin</url>
+    <url>http://git.app.eng.bos.redhat.com/git/openshift-elasticsearch-plugin.git</url>
   </scm>
 
   <developers>
