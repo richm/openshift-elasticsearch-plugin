@@ -1,5 +1,5 @@
 [DEFAULT]
-bomversion = @VERSION@
+bomversion = @VERSION@.redhat-1
 
 [com.redhat.rcm-openshift-elasticsearch-plugin-bom]
 scmurl = git://git.app.eng.bos.redhat.com/openshift-elasticsearch-plugin.git?bom#@MEAD_HASH@
